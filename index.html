@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Currency Converter</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="favicons/favicon.ico" type="image/x-icon">
+    <script src="https://kit.fontawesome.com/6ba917cfd7.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+    <main>
+        <div class="container">
+
+
+            <div><input id="input" type="text" placeholder="1"></div>
+            <div class="countrySection">
+
+                <div class="leftSection">
+                    <img id="country-flag" src="https://flagsapi.com/US/flat/64.png">
+                    <div class="selectContainer">
+                        <select name="from" id="from">
+                            <option value="USD" selected>USD</option>
+                            <option value="INR">INR</option>
+                            <option value="EUR">EUR</option>
+                        </select>
+                        <i class="fa-solid fa-caret-down dropDown"></i>
+                    </div>
+                </div>
+
+                <button class="exchange" id="exchange">
+                    <i class="fa-solid fa-arrow-right-arrow-left"></i>
+                </button>
+
+                <div class="rightSection">
+                    <img id="country-flag" src="https://flagsapi.com/IN/flat/64.png">
+                    <div class="selectContainer">
+                        <select name="to" id="to">
+                            <option value="USD">USD</option>
+                            <option value="INR" selected>INR</option>
+                            <option value="EUR">EUR</option>
+                        </select>
+                        <i class="fa-solid fa-caret-down dropDown"></i>
+                    </div>
+                </div>
+            </div>
+
+            <button class="convert" id="convert">Convert</button>
+
+            <p id="result">1USD = 83.49INR</p>
+
+        </div>
+    </main>
+
+</body>
+<script src="app.js"></script>
+<script src="code.js"></script>
+</html>
